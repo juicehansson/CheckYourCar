@@ -3,8 +3,8 @@ This example was created as a conversation starter for a connecting app to a car
 
 To try this out, make sure that you have two tabs open with the same webadress, and also make sure that the two tabs have different profile names.
 
-This example is based on Clint Heyer's Websocket - Skeleton. 
-Beneath lies his original ReadMe.md
+# This example is based on Clint Heyer's Websocket - Skeleton. 
+# Beneath lies his original ReadMe.md
 
 # websockets-skeleton
 
