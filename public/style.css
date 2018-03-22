@@ -1,0 +1,88 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h1 {
+  color: darkred;
+}
+
+a,
+a:link,
+a:visited {
+  color: darkred;
+}
+
+a:hover {
+  color: black;
+}
+
+/* ---PROFILE--- */
+
+.profilePic {
+  border: 0.2em solid black;
+  background-color: aliceblue;
+  border-radius: 5em;
+  width: 7em;
+  height: 7em;
+  text-align: center;
+  margin: 0.3em;
+  padding: 1em;
+}
+
+.profilePic:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+
+/* ---CSS GRIDS--- */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat (4, 1fr);
+  grid-gap: 0.5em;
+  grid-auto-rows: (1em, auto);
+  padding: 1em;
+}
+
+.dad {
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+}
+
+.mom {
+  grid-column: 2;
+  grid-row: 1;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+}
+
+.son {
+  grid-column: 3;
+  grid-row: 1;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+}
+
+.daughter {
+  grid-column: 4;
+  grid-row: 1;
+  margin-left: auto;
+  margin-right: auto;
+  float: none !important;
+}

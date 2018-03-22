@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>FamilyCheckCarState</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <center>
+    <div class="wrapper">
+      <!-- This is where the random profile name appears -->
+      <h2>You are:</h2>
+      <h2 style="color: purple" id="yourName"></h2>
+    </div>
+
+    <!-- This is where the different profiles appear -->
+    <!-- The clicks on these circles represents how many times one profile has been connected to the car -->
+    <!-- Right now you have to manually click them and then send of your information - but the idea is that the "clicks" will be the key connecting to the car -->
+    <center class="wrapper">
+
+      <div style="visibility:hidden" onclick="clicksDad();" id="dad" class="profilePic dad">Dad
+        <h2 id="DadTimes"></h2>
+      </div>
+
+      <div style="visibility:hidden" onclick="clicksMom();" class="profilePic mom" id="mom">Mom
+        <h2 id="MomTimes"></h2>
+      </div>
+
+      <div style="visibility:hidden" onclick="clicksSon();" class="profilePic son" id="son">Son
+        <h2 id="SonTimes"></h2>
+      </div>
+
+      <div style="visibility:hidden" onclick="clicksDaughter();" class="profilePic daughter" id="daughter">Daughter
+        <h2 id="DaughterTimes"></h2>
+      </div>
+
+    </center>
+    <!-- This button lets you send off the information that you just put in (clicks) -->
+    <!-- This would be automatic, saving each click/connect -->
+    <form id="sendForm">
+      <input type="submit" value="Send info" />
+    </form>
+
+    <!-- This checks who sent info last (blue background means someone else, yellow means you) -->
+    <h2 id="message">Who unlocked the car last?</h2>
+
+    <h2 id="who"></h2>
+  </center>
+  <script src="lib/reconnecting-websocket.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
